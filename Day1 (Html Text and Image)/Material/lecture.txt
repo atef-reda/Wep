@@ -1,0 +1,128 @@
+HTML
+Hyper Text MarkUp Language
+
+interpretation 
+interpreter 
+browser
+predefined tags 
+<p>iti<p>
+<b></b>
+=========================
+static web page 
+
+===============================
+client 
+
+Server 
+
+=============================
+http://www.facebook/home.com  // URI
+www.facebook/home.com
+HTTP: Hyper Text Transfer proctocle
+
+FTP 
+HTTPS
+
+///////////////
+www: World Wide Web 
+
+LAN : Local Area Network 
+
+WAN : Wide Area Network 
+
+www
+=================================
+html4
+
+1- paired tags || Couple tags 
+<p>iti</p>
+
+2- couple tags with Attribute 
+
+<p attrnamne=""></p>
+<p align="center"></p>
+
+3- self closing tags
+<img />
+4- self closing with attr
+
+<img src=""/>
+=====================================
+html is not case sensitive 
+uppercase lowercase 
+<b><B>
+w3c
+lowercase letters
+
+
+template 
+<html>
+<head>
+<title></title>
+</head>
+<body>
+
+</body>
+</html>
+
+==//////////////
+html 
+1- Text 
+2- Image 
+3- Tables 
+4- Forms
+
+
+//////////////////
+Notepad 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

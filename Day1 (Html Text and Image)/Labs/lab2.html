@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Lab2</title>
+</head>
+<body>
+<h1><font size="3">A simple C program:</font></h1>
+<pre>
+<p>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+int exp(int base, int power) {
+    if (power == 0) {
+        return 1;
+    } else {
+        power--;
+        return base * exp(base, power);
+    }
+}
+int main() {
+    int x = 2, y = 3;
+    clrscr();
+    printf("\n%d ^ %d = %d", x, y, exp(x, y));
+    getch();return 0;
+}
+<p><font size="4">Using the pre element</font></p>
+</p>
+</pre>
+</body>
+</html>
+

@@ -1,0 +1,48 @@
+Text 
+Image 
+Tables 
+Forms 
+=========================
+Hyper text Mark up Language 
+
+link
+<a href="">content  </a> // hyper text 
+Links  
+External Link 
+Internal Link 
+namedAnchor Link
+Mail Link 
+
+
+=====================
+
+pathes 
+absluote Path 
+
+relative Path
+=============================
+
+to:ahmed
+cc:mhmd
+bcc: ali
+subject:
+body:
+
+<a href="mailto:ali@iti?cc=mhmd@iti&bcc=ahmed@iti">Send Mail 📧</a>
+======================
+tables 
+forms 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
