@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-image: url(img/bg.jpg)
+        }
+        table {
+            /*border:2px solid black ;*/
+            background-color: #f4176c;
+            /*background-image:url(img/bg.jpg);*/
+            margin: 10px auto;
+            height: 350px;
+            width: 350px;
+            border-radius: 20%;
+            text-align: center;
+            margin-top: 150px;
+        }
+        input[type] {
+            display: inline-block;
+            width: 80%;
+            height: 25px;
+            background-image: url(img/6.png);
+            background-repeat: no-repeat;
+            border: 0px;
+            outline: 0;
+            background-color: #f4176c;
+            border-bottom: 2px solid black;
+        }
+            input[type]:focus {
+                border: 0px;
+                outline: 0;
+                border-bottom: 3px solid blue
+            }
+            .frm{
+                font:bold 15px tahoma
+            }
+            .log:hover{
+                cursor:pointer
+            }
+        ul {
+            /*border:2px solid black ;*/
+            background-color: lightgray;
+        }
+
+        li {
+            /*border: 2px solid black;*/
+            background-color: lightgray;
+            margin: 10px;
+            padding: 10px;
+            /*list-style-position:inside*/
+            /*list-style:decimal*/
+            /*list-style: hiragana*/
+            /*list-style-image:url(img/6.png)*/
+            list-style: none;
+            display: inline-block;
+            font: bold 15px tahoma
+        }
+
+        * {
+            padding: 0;
+            margin: 0
+        }
+
+        li:hover {
+            color: blue;
+            cursor: pointer;
+        }
+
+        li:active {
+            color: magenta;
+        }
+
+        .second {
+            margin-left: 400px;
+        }
+
+        ul li:last-child {
+            margin-left: 500px;
+        }
+
+    </style>
+  
+</head>
+<body>
+    <ul>
+        <li>home</li>
+        <li class="second">about </li>
+        <li>contact</li>
+        <li> 🛒</li>
+        <li>Downloads</li>
+        <li>👤▾</li>
+
+    </ul>
+    <table>
+        <tr>
+            <td class="frm">
+                user Name
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" />
+            </td>
+        </tr>
+        <tr>
+            <td class="frm">
+                Password
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="password" />
+            </td>
+        </tr>
+        <tr>
+            <td class="frm log">
+                🔐
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

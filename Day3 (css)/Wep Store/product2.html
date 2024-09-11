@@ -1,0 +1,125 @@
+<html>
+  <head>
+    <style>
+      body {
+        background-image: url("../Lab/Images/l1.jpg");
+      }
+      .a {
+        width: 200;
+        height: 250;
+        margin-top: 10;
+      }
+      .b {
+        width: 60;
+        height: 60;
+      }
+      table[name] {
+        width: 400;
+        height: 350;
+        background-color: rgb(142, 165, 216);
+        margin: 10 auto;
+        margin-top: 80;
+        padding: 50;
+        text-align: center;
+        border-radius: 15%;
+        
+      }
+      table[title] tr td {
+        padding: 0 10;
+        outline: 0;
+        border: 0;
+      }
+
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      ul{
+        list-style: none;
+      }
+      ul li{
+        display: inline-block;
+      }
+      li a{
+        /* background-color: lightgray; */
+        margin: 10px;
+        padding: 10px;
+        list-style: none;
+        font: bold 15px tahoma;
+        text-decoration: none;
+        color: black;
+      }
+
+      li a:hover {
+        color: rgb(225, 240, 12);
+        cursor: pointer;
+      }
+      .second a:hover {
+        color: magenta;
+        cursor: pointer;
+      }
+      #first{
+        margin-left: 950;
+      }
+      #second{
+        margin-left: 100;
+      }
+      #third{
+        margin-left: 100;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>
+        <img src="../Lab/Images/home.png" alt="" />
+      </li>
+      <li id="first"><a  href="products.html">products</a></li>
+      <li id="second"><a  href="about_us.html">About Us</a></li>
+      <li id="third"><a  href="contact_us.html">Contact Us</a></li>
+    </ul>
+    <table name="first">
+      <tr>
+        <td><img  src="../Lab/Images/l1.jpg" alt="" /></td>
+      </tr>
+      <tr>
+        <td >Golden Head Phone</td>
+      </tr>
+      <tr>
+        <td>
+          <table title="">
+            <tr>
+              <td>Headphones Form Factor</td>
+              <td>Over Ear</td>
+            </tr>
+            <tr></tr>
+              <td>Headphones Jack	</td>
+              <td>3.5 mm Jack</td>
+            </tr>
+            <tr></tr>
+            <td>Connectivity Technology		</td>
+            <td>Wired</td>
+          </tr>
+          <tr></tr>
+          <td>Model Name	</td>
+          <td>K11</td>
+        </tr>
+          </table>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>
+          <a
+            href="https://wa.me/1019510428"
+            class="whatsapp-link"
+            target="_blank"
+            ><img class="b" src="../Lab/Images/h8.jpg" alt=""
+          /></a>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
