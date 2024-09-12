@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        // explicit convertion
+
+        (22).toFixed()//'22'
+
+        //Number.parseInt("22")
+        //Number.parseInt("22")//22
+        //typeof Number.parseInt("22")// number
+        //Number.parseFloat("22")
+        parseInt("22.5")//22
+        parseFloat("22.5")//22.5
+
+        parseInt("22ali")//22
+        parseInt("ali22")// NAN
+        typeof parseInt("ali22") // number
+
+
+        Number("22")//22
+        Number("22ali")
+
+        Number("22ali") == parseInt(5 / 0)
+        // imolicit conversion
+        // string , number
+        "5" + 2// string//"52"
+           "5"*3//15 number
+
+        // number , string
+        5 * "2"
+
+        // boolean , number  true==1 false ==0 
+
+        true+5//6
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
