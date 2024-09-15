@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            display: inline-block;
+            border: 3px solid red; /* Sets red border */
+         /* Ensures padding is included in the element's total width/height */
+         padding: 0;
+         margin: 0;
+        }
+
+        body {
+            margin: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var counter = 0;
+        setInterval(() => {
+            document.body.innerHTML += `<p>${counter}</p>`;
+            document.body.innerHTML += `<br>`;
+
+            document.title = counter;
+            counter++;
+        }, 500);
+    </script>
+</body>
+</html>

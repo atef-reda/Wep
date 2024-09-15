@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Write a JavaScript code to remove duplicate items from an array.
+        //  Sort them ascending
+        // console.log(arr)
+        // var arr = [100, 50, 20, 10, 60, 30,80,90];
+        // var arr=[...new Set(arr)]
+        // arr.sort(function(a,b){return a-b})
+        // console.log(arr)
+
+
+        //          Filter numbers larger than 50
+        //         a- User defined function
+        // arr = [100, 50, 20, 10, 60, 30,80,90];
+        // console.log(arr)
+        // function filter_larger_than50(arr) {
+        //     j = 0;
+        //     var filter_arr = [];
+        //     for (i = 0; i < arr.length; i++) {
+        //         if (arr[i] > 50) {
+        //             filter_arr[j] = arr[i]
+        //             j++
+        //         }
+        //     }
+        //     return filter_arr;
+        // }
+        // arr = filter_larger_than50(arr)
+        // console.log(arr)
+
+
+        //  Filter numbers larger than 50
+        // b- Array built in filter function
+
+        var arr=[100,50,20,10,60,30];
+        arr=arr.filter(function(elm){
+            return elm>50;
+        })
+        console.log(arr)
+
+        // Display Max and Min Numbers
+        // a - User defined function
+
+        var arr = [100, 50, 20, 10, 60, 30];
+        function Display_max_min_num(arr) {
+            var min=0;
+            var max=0;
+            for (i = 0; i < arr.length; i++) {
+                if (arr[i] > max) {
+                    max=arr[i];
+                }else if(arr[i])
+                {
+                    min=arr[i]
+                }
+            }
+            console.log("max number: "+max+" "+"min number: "+min)
+        }
+        Display_max_min_num(arr)
+
+        // Display Max and Min Numbers
+        // b- Math functions using es6 feature (BONUS)
+
+        var arr = [100, 50, 20, 10, 60, 30];
+        function Display_max_min_num(arr) {
+            var max=0;
+            var min=0;
+            max=Math.max(...arr)
+            min=Math.min(...arr)
+            console.log("max number: "+max+" "+"min number: "+min)
+
+        }
+        Display_max_min_num(arr)
+
+
+        // - Write a JavaScript function to Compute the sum and product of an array of
+        // integers (Use eval)
+        //a
+        var arr = [100, 50, 20, 10, 60, 30];
+        function sumall(arr)
+        {
+            var sum=eval(arr.join('+'));
+            var product=eval(arr.join('*'));
+            console.log("sum ="+sum+" product :"+product)
+        }
+        sumall(arr)
+
+        // b
+        function sumall() {
+            var arr = Array.from(arguments);
+            var sum = eval(arr.join('+'));
+            var product = eval(arr.join('*'));
+            console.log("sum =" + sum + " product :" + product)
+        }
+        sumall(100, 50, 20, 10, 60, 30)
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <script>
+
+       //    ----------- function statement-------
+       //function fun1() {
+       //    console.log("fun1")
+       //}// function declaration
+
+       //fun1()// calling
+
+       //function fun2(x) {
+       //    console.log("welcome "+ x)
+       //}
+
+       //fun2("ali")// 'welcome ali'
+
+       //fun2();//'welcome undefined '
+       //fun2("ali", "mona")//"welcome ali"
+
+    //function doub(num) {
+    //    return num * 2;
+
+
+    //   }
+       //var result = doub(5)
+
+
+       // optional params 
+       function save(_name, age) {
+           if (_name == undefined || age == undefined) {
+               console.log("plz enter your data")
+           }
+           else {
+               alert("Saved")
+           }
+       }
+       //save("ali",20)
+       save()
+       // default params  ===> self Study
+
+       function sum() {
+           //console.log(arguments)  // array like
+           sum = 0;
+           for (var i = 0; i < arguments.length; i++) {
+               sum+=arguments[i]
+           }
+           console.log(sum)
+       }
+
+       sum(2, 5, 7, 20, true,10,"ali")
+
+
+
+       // ================ function Expression 
+          var result= function (num) {
+                  return num * 2;
+               }
+
+
+
+
+   </script>
+</head>
+<body>
+
+</body>
+</html>

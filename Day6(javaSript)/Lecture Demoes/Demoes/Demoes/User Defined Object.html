@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <script>
+       var str = new String("js") // class based object
+       // create my own class
+       // literal object 
+       var arr;// variable 
+       arr = [];// Array
+       var obj = {}; // literal Object
+       //object contain keys And values (key  value paired )
+       /*obj = {
+            key:value,
+            key:value
+       }*/
+       var car = {
+           color: "red",
+           model: 2024,
+           brand: "mercedes",
+           isAvailable: function () {
+               console.log("Car  is Available")
+           },
+           getprice: function (_car) {
+               (_car=="CLA"?console.log("price= 2M EP"):console.log("this car is not Available Now"))
+           },
+           classes: ["1st", "2nd", "3rd"],
+           sponsor: {
+               _name: "Mansour", address: {city:"cairo", country:"Egypt"}
+           },
+
+           details: function () {
+               console.log(this.color + " : " + this.model)
+           }
+
+
+
+       }
+       // Object language
+
+       car.model // getting 2024
+       car.model = 2025;
+       //delete car.color
+       car.motor = "2000cc"
+       car.sponsor.address.city// 'cairo'
+       // in operator 
+       'model' in car // true
+       'toString' in car // true
+       car.hasOwnProperty("model")// true
+       car.hasOwnProperty("toString")// false
+
+       // loop   for in
+       //for (i in car) {
+
+       //    console.log(i +" : "+car[i])
+
+       //}
+
+       //Object.keys(car) // ['color', 'model', 'brand', 'isAvailable', 'getprice', 'classes', 'sponsor', 'details', 'motor']
+
+       //var car2;
+       //car2 = car;
+       //Object.freeze(car)
+
+       emploee={
+           name: "nada",
+           age: 25,
+           salary: 5000,
+           print: function () {
+               console.log("Name = " + this.name + " Age = " + this.age + " salary = " + this.salary)
+           }
+       }
+
+       Emps = [{
+           name: "Ghada",
+           age: 25,
+           salary: 5000,
+           print: function () {
+               console.log("Name = " + this.name + " Age = " + this.age + " salary = " + this.salary)
+           }
+       },
+           {
+               name: "nada",
+               age: 19,
+               salary: 2000,
+               print: function () {
+                   console.log("Name = " + this.name + " Age = " + this.age + " salary = " + this.salary)
+               }
+           },
+           {
+               name: "ziad",
+               age: 30,
+               salary: 4000,
+               print: function () {
+                   console.log("Name = " + this.name + " Age = " + this.age + " salary = " + this.salary)
+               }
+           }
+           , {
+               name: "Ali",
+               age: 22,
+               salary: 7000,
+               print: function () {
+                   console.log("Name = " + this.name + " Age = " + this.age + " salary = " + this.salary)
+               }
+           }]
+
+       Emps.forEach(function (elm) { elm.print() })
+       console.log("====== filter ==== salary>5000")
+       result= Emps.filter(function (elm) { return elm.salary>5000 })
+
+       result.forEach(function (elm) { elm.print() })
+
+       console.log("====== Sort By Names  =========== ==== ")
+              // nada ,Ghada,ziad , Ali
+       Emps.sort(function (a,b) {
+           if (a.name.toLowerCase() > b.name.toLowerCase())
+               return 1;
+           else if (a.name.toLowerCase() < b.name.toLowerCase())
+               return -1;
+           else
+               return 0;
+
+
+       })
+       Emps.forEach(function (elm) { elm.print() })
+
+
+   </script>
+</head>
+<body>
+    <h1>User defined Object</h1>
+</body>
+</html>

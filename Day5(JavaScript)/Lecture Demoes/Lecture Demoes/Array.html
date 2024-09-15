@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        //var arr = new Array()// constructor declaration
+        //var arr = [];//array
+        //arr[0] = 10
+        //arr[1] = 20;
+        //arr[2] = "ali"
+        //arr[50] = 100
+        //arr[99] = true
+        //spars Array
+        //for (var i = 0; i < arr.length; i++) {
+        //    console.log(arr[i])
+        //}
+
+        //// in  operator checks index state if has value or no
+        //0 in arr // true
+        //5 in arr //false
+        //console.log("=====================")
+        //for (i in arr) {
+        //    console.log(arr[i])
+        //}
+
+        //////////// array methods 
+        var arr = [20, 10, 40, 35, 15, 100, 80, 200, 70]
+        arr.push(300)// add to end of arr  and return new arr length
+        arr.pop()// return last value in arr decrease length
+        arr.shift()//20 return first value in arr decrease length
+        arr.unshift(400, 300)
+        arr.includes(400)// true
+        arr.join()//'400,300,10,40,35,15,100,80,200,70'
+        arr.join('+')      //'400+300+10+40+35+15+100+80+200+70'
+
+        //sum = 0;
+        //for (var i = 0; i < arr.length; i++) {
+        //    sum+=arr[i]
+        //}
+        //console.log(sum)
+
+        eval(arr.join('+'))
+        //
+
+        //arr.forEach(loop)
+        //function loop(elm, indx) {
+        //    console.log(indx+ " : " +elm)
+        //}
+
+        arr.forEach(function (elm, indx) {
+            console.log(indx + " : " + elm)
+        })
+
+
+        var result = arr.filter(function (elm) {
+            //if (elm > 70)
+            //    return elm;
+            return elm > 70;
+
+        })
+
+        //console.log("before sort "+arr)
+                     //20, 10, 40, 35, 15, 100, 80, 200, 70,70
+        //arr.sort(function (a, b) {
+        //    if (a > b)
+        //        return 1;
+        //    else if (a < b)
+        //        return -1;
+        //    else
+        //        return 0;
+
+        //})
+        //console.log("after sort " + arr)
+
+        arr.sort(function (a, b) {
+            //return a - b;
+            return b - a; //  descending
+
+        })
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
