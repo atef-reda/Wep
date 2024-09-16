@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  
+</head>
+<body>
+    <form action="DomSelectors.html">
+        <input type="text" /><br /><br />
+        <input type="password" /><br /><br />
+        <input type="submit" value="LogIn" />
+
+
+    </form>
+
+    <script>
+        sub = document.querySelector("input[type='submit']")
+        sub.addEventListener('click', function (e) {
+            e.preventDefault()
+            alert("Default event Stopped")
+
+        })
+    </script>
+</body>
+</html>

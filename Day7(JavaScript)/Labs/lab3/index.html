@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Listen for the load event on the window object
+        window.addEventListener("load", function () {
+            // Define the gradient colors
+            const gradientColors = [
+                '#ff7e5f', // Start color
+                '#feb47b'   // End color
+            ];
+
+            // Set the background gradient
+            document.body.style.background = `linear-gradient(to right, ${gradientColors.join(', ')})`;
+        });
+    </script>
+</body>
+
+</html>
